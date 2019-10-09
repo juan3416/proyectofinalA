@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Proyecto Final</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron pb-2">
+            <h1 class="display-4 text-center">Proyecto final</h1>
+            <p class="lead text-center">Este es el proyecto final de analisis y diseño de sistemas de información:</p>
+            <hr class="my-4">
+            <p class="">
+                <a class="btn btn-success d-flex p-2 bd-highlight justify-content-center" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1 font-weight-bold">Click para ver el enunciado!!!!!</a>
+            </p>
+            <div class="row">
+                <div class="col mb-0">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item active float-left font-weight-bold">Features</li>
+                                <li class="list-group-item font-weight-bold"> Se debe hacer uso de Materialize o Bootstrap para los estilos de la página web. <i class="large material-icons font-weight-bold text-success float-right">check</i>
+                                </li>
+                                <li class="list-group-item font-weight-bold">Se debe hacer uso de selectores Javascript (Por ID,por Clase y querySelector). <i class="large material-icons font-weight-bold text-success float-right">check</i></li>
+                                <li class="list-group-item font-weight-bold">Se deben vincular eventos a los elementos del DOM. <i class="large material-icons font-weight-bold text-success float-right">check</i></li>
+                                <li class="list-group-item font-weight-bold">Se debe alimentar información de dos API públicas. Al menos una de ella debe tener referencias de imágenes y arreglos que posteriormente deben ser recorridos y mostrados de alguna manera en la página. <i class="large material-icons font-weight-bold text-success float-right">check</i>
+                                </li>
+                                <li class="list-group-item font-weight-bold">El proyecto debe ser subido a la plataforma Github haciendo uso de Git y se debe enviar únicamente la URL cuando el proyecto se encuentre terminado. <i class="large material-icons font-weight-bold text-success float-right align-items-center ">check</i>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron pb-1">
+            <h1 class="display-4 text-center">API externas</h1>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <h1>Peticiones con imagen</h1>
+                    <div class="form-group">
+
+                        <label for="id">Ingrese Id de usuario que desea conocer</label>
+                        <input type="number" class="form-control" id="id" placeholder="Ingrese Id (1 - 12) y presione Enter" onkeypress="">
+                    </div>
+                    <div class="container d-flex justify-content-center" id="userimg">
+
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h1 class="text-center mb-4">Peticiones con arreglos</h1>
+                    <button class="btn btn-success mb-4" onclick="main()">Consulta</button>
+                    <div class="container " id="userarr">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Seccion de Selectores JS</h1>
+            <p class="lead">En esta seccion vamos a usar los selectores</p>
+            <hr class="my-4">
+            <div class="row mb-5 align-items-center">
+                <div class="col-md-6" onmouseover='colorLetras()'>
+                    <div class="row justify-content-center segmento2">
+                        <span class="display-4 my-3">Selector 2</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="segmento2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate mollitia corporis aperiam unde rem molestias odit, veritatis, praesentium ratione laborum necessitatibus a consequuntur cumque, labore eaque consequatur maiores
+                                voluptatibus provident. Sed laboriosam odit saepe ullam ea perferendis quisquam voluptates pariatur, reiciendis totam quaerat excepturi, odio quae architecto modi consequuntur commodi ipsum eaque rem? Cum velit corrupti
+                                tenetur natus, doloremque eos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row" id="colores">
+                        <div class="col-md-4 bg-primary rounded-pill" id="color1">
+                            Caja Azul
+                            <button class="btn btn-primary my-3 border border-warning" id="btncol1">Cambio color</button>
+                        </div>
+                        <div class="col-md-4 bg-danger rounded-pill" id="color2">
+                            Caja Roja
+                            <button class="btn btn-danger my-3 border border-warning" id="btncol2">Cambio color</button>
+                        </div>
+                        <div class="col-md-4 bg-success rounded-pill" id="color3">
+                            Caja Verde
+                            <button class="btn btn-success my-3 border border-warning" id="btncol3">Cambio color</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" href="#" role="button">Leer mas!</a>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias!!!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    </div>
+                    <div class="modal-body">
+                        Profe espero su calificacion sea a conciencia y valore todo el esfuerzo realizado. Felicidades!!! y gracias por todo...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
